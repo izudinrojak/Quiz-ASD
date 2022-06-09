@@ -3,7 +3,7 @@ import re
 
 pola  = r'@[A-Za-z]+[0-9.\_]+'
 uname = input('Masukkan Username: ')
-cocok = re.findall(a, uname)
+cocok = re.findall(pola, uname)
 if cocok:
     if uname == cocok[0]:
         print('PASS')
